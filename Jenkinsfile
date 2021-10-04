@@ -10,8 +10,39 @@ pipeline {
                 
                 sh 'terraform --version'
 
+
+
           
             }
         }
+
+        stage("initialize"){
+
+            steps{
+
+                sh 'terraform init'
+            }
+
+            
+        }
+
+        stage("Dry run"){
+
+            steps{
+
+                sh 'terraform plan -out=xyz.tfplan'
+            }
+        }
+
+
+        stage("exec"){
+
+            steps{
+
+                sh 'terraform apply xyz.tfplan'
+            }
+        }
+
+        
     }
 }
