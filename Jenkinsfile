@@ -30,7 +30,7 @@ pipeline {
 
             steps{
 
-                sh 'terraform plan -out=xyzxyz.tfplan'
+                sh 'terraform plan -out=fcdsvfhjf.tfplan'
             }
         }
 
@@ -39,7 +39,7 @@ pipeline {
 
             steps{
 
-                sh 'terraform apply xyzxyz.tfplan'
+                sh 'terraform apply fcdsvfhjf.tfplan'
             }
         }
 
