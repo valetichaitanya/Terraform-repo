@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "b" {
-    bucket = "test_automation_learn"
+    bucket = "test-automation-learn"
 
 
 tags = {
